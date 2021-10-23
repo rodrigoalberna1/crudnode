@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
+    <title>My CRUD in NodeJS</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+      #titulo {
+        font-family: 'Zen Kurenaido', sans-serif;
+        color: black;
+        padding-left: 110px;
+      }
+      form {
+        margin: 160px 490px;
+      }
+      input {
+        width: 290px;
+        height: 30px;
+        margin: 10px 5px;
+        margin-bottom: 1px;
+        border-radius: 25px;
+        border-color: white;
+        color: lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+      }
+
+      #botao {
+        font-family: 'Zen Kurenaido', sans-serif;
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        padding-bottom: 5px;
+        margin: 10px 100px;
+      }
+      #botao:hover {
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/show" method="POST" class="formulario">
+      <h2 id="titulo">Registrar</h2>
+      <input type="text" placeholder="Nome" name="name" class="input" />
+      <input type="text" placeholder="Sobrenome" name="surname" class="input" />
+      <button type="submit" id="botao">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>Editar</title>
+  </head>
+  <body>
+    <h2>Editar</h2>
+    <% data.forEach(function(details){ %>
+    <form action="/edit/<%= details._id %>" method="POST">
+      <input type="text" value="<%= details.name%>" name="name" />
+      <input type="text" value="<%= details.surname%>" name="surname" />
+      <button><a href="/show/">Voltar</a></button>
+      <button type="submit">Salvar</button>
+    </form>
+    <%}) %>
+  </body>
+</html>
